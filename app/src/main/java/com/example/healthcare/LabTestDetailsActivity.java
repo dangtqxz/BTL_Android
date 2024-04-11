@@ -1,11 +1,13 @@
 package com.example.healthcare;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -48,7 +50,20 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Add to cart
+                SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", MODE_PRIVATE);
+                String username = sharedpreferences.getString("username", "").toString();
+                String product = tvPackageName.getText().toString();
+                float price = Float.parseFloat(intent.getStringExtra("text3").toString());
+
+                Database db = new Database(getApplicationContext(), "healthcare", null, 1);
+
+                if (db.checkCart(username, product)==1) {
+                    Toast.makeText(getApplicationContext(), "Already in Cart", Toast.LENGTH_SHORT).show();
+                } else {
+                    db.addCart(username, product, price, "lab");
+                    Toast.makeText(getApplicationContext(), "Added to Cart", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(LabTestDetailsActivity.this, LabTestActivity.class));
+                }
             }
         });
 

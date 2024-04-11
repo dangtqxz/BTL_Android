@@ -35,6 +35,8 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+//                startActivity(intent);
                 String username = edtUserName.getText().toString();
                 String password = edtPassword.getText().toString();
                 Database db = new Database(getApplicationContext(), "healthcare", null, 1);
