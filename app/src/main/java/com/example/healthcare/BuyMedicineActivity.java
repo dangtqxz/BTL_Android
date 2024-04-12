@@ -76,7 +76,7 @@ public class BuyMedicineActivity extends AppCompatActivity {
         btnGoToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(BuyMedicineActivity.this, CartBuyMedicineActivity.class));
+                startActivity(new Intent(BuyMedicineActivity.this, CartBuyMedicineActivity.class));
             }
         });
 
