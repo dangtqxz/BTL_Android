@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class HomeActivity extends AppCompatActivity {
 
-    CardView findDoctor, labTest,exit;
+    CardView findDoctor, labTest, orderDetails, exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,8 @@ public class HomeActivity extends AppCompatActivity {
         exit = findViewById(R.id.cardExit);
         findDoctor = findViewById(R.id.cardFindDoctor);
         labTest = findViewById(R.id.cardLabTest);
+        orderDetails = findViewById(R.id.cardOrderDetails);
+
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +54,13 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, LabTestActivity.class));
+            }
+        });
+
+        orderDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, OrderDetailsActivity.class));
             }
         });
 

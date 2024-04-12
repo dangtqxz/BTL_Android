@@ -120,7 +120,7 @@ public class Database extends SQLiteOpenHelper {
         db.close();
     }
 
-    public ArrayList getOrderData(String username, String otype) {
+    public ArrayList getOrderData(String username) {
         ArrayList<String> arr = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();
         String str[] = new String[1];
@@ -128,15 +128,8 @@ public class Database extends SQLiteOpenHelper {
         Cursor c = db.rawQuery("SELECT * FROM orderplace WHERE username=?", str);
         if (c.moveToFirst()) {
             do {
-                String fullname = c.getString(1);
-                String address = c.getString(2);
-                String contactno = c.getString(3);
-                String pincode = c.getString(4);
-                String date = c.getString(5);
-                String time = c.getString(6);
-                String amount = c.getString(7);
                 //Check 3:48:34
-                arr.add(fullname + "$" + address + "$" + contactno + "$" + pincode + "$" + date + "$" + time + "$" + amount);
+                arr.add(c.getString(1) + "$" + c.getString(2) + "$" + c.getString(3) + "$" + c.getString(4) + "$" + c.getString(5) + "$" + c.getString(6) + "$" + c.getString(7) + "$" + c.getString(8));
             } while (c.moveToNext());
         }
         db.close();
