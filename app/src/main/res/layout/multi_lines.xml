@@ -31,12 +31,12 @@
 
         <TextView
             android:id="@+id/line_c"
-            android:layout_width="0dp"
-            android:layout_weight="0.2"
+            android:layout_width="61dp"
             android:layout_height="wrap_content"
+            android:layout_weight="0.2"
             android:text="TextView"
             android:textColor="#ffff66"
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/line_d"

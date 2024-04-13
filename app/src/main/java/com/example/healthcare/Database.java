@@ -97,7 +97,7 @@ public class Database extends SQLiteOpenHelper {
             do {
                 String product = c.getString(1);
                 String price  = c.getString(2);
-                arr.add(product + "$" + price);
+                arr.add(product + "*" + price);
             } while (c.moveToNext());
         }
         db.close();
@@ -129,7 +129,7 @@ public class Database extends SQLiteOpenHelper {
         if (c.moveToFirst()) {
             do {
                 //Check 3:48:34
-                arr.add(c.getString(1) + "$" + c.getString(2) + "$" + c.getString(3) + "$" + c.getString(4) + "$" + c.getString(5) + "$" + c.getString(6) + "$" + c.getString(7) + "$" + c.getString(8));
+                arr.add(c.getString(1) + "*" + c.getString(2) + "*" + c.getString(3) + "*" + c.getString(4) + "*" + c.getString(5) + "*" + c.getString(6) + "*" + c.getString(7) + "*" + c.getString(8));
             } while (c.moveToNext());
         }
         db.close();

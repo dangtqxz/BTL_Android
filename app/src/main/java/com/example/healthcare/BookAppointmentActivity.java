@@ -62,7 +62,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed1.setText(name);
         ed2.setText(address);
         ed3.setText(contact);
-        ed4.setText("Cons Fees: " +fees+ "/-");
+        ed4.setText("Cons Fees: " +fees+ "$");
 
         //date picker
         initDatePicker();

@@ -37,7 +37,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         tvPackageName.setText(intent.getStringExtra("text1"));
-        tvTotalCost.setText("Total Cost: "+intent.getStringExtra("text3")+ "/-");
+        tvTotalCost.setText("Total Cost: "+intent.getStringExtra("text3")+ "$");
         edDetails.setText(intent.getStringExtra("text2"));
 
         btnBack.setOnClickListener(new View.OnClickListener() {

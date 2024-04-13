@@ -65,9 +65,9 @@ public class CartLabActivity extends AppCompatActivity {
 
         for (int i = 0; i < dbData.size(); i++) {
             String arrData = dbData.get(i).toString();
-            String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
+            String[] strData = arrData.split(java.util.regex.Pattern.quote("*"));
             packages[i][0] = strData[0];
-            packages[i][4] = "Cost: " + strData[1] + "/-";
+            packages[i][4] = "Cost: " + strData[1] + "$";
             total = total + Float.parseFloat(strData[1]);
         }
 

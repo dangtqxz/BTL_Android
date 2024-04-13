@@ -21,40 +21,40 @@ import java.util.HashMap;
 public class DoctorDetailsActivity extends AppCompatActivity {
 
     private String[][] doctor_details1 = {
-            {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "600"},
-            {"Doctor Name: Jane Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
-            {"Doctor Name: John Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "300"},
-            {"Doctor Name: Jane Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "500"},
-            {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "800"}
+            {"Doctor Name: Anise Shinsuke", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "600"},
+            {"Doctor Name: Krystal Tiffany", "Hospital Address: TuyenQuang", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
+            {"Doctor Name: Sultana Vesa", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "300"},
+            {"Doctor Name: Evangelina Rhetta", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "500"},
+            {"Doctor Name: Kamal Nisha", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "800"}
     };
 
     private String[][] doctor_details2 = {
-            {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "600"},
-            {"Doctor Name: Jane Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
-            {"Doctor Name: John Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "300"},
-            {"Doctor Name: Jane Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "500"},
-            {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "800"}
+            {"Doctor Name: June Demelza", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "600"},
+            {"Doctor Name: Theodore Fay", "Hospital Address: TuyenQuang", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
+            {"Doctor Name: Daley Avaline", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "300"},
+            {"Doctor Name: Lenox Fawn", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "500"},
+            {"Doctor Name: Elenora Cedric", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "800"}
     };
 
     private String[][] doctor_details3 = {
-            {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "600"},
-            {"Doctor Name: Jane Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
-            {"Doctor Name: John Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "300"},
-            {"Doctor Name: Jane Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "500"},
-            {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "800"}
+            {"Doctor Name: Yuuma Imogen", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "600"},
+            {"Doctor Name: Sharla Lilyrose", "Hospital Address: TuyenQuang", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
+            {"Doctor Name: Layla Celinda", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "300"},
+            {"Doctor Name: Aliah Calla", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "500"},
+            {"Doctor Name: Sandy May", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "800"}
     };
 
     private String[][] doctor_details4 = {
-            {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "600"},
-            {"Doctor Name: Jane Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
-            {"Doctor Name: John Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "300"},
-            {"Doctor Name: Jane Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "500"},
-            {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "800"}
+            {"Doctor Name: Blessing Laurena", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "600"},
+            {"Doctor Name: Rexana Ely", "Hospital Address: TuyenQuang", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
+            {"Doctor Name: Rexana Ely", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "300"},
+            {"Doctor Name: Emma Christabelle", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "500"},
+            {"Doctor Name: Cary Adrianne", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "800"}
     };
 
     private String[][] doctor_details5 = {
             {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "600"},
-            {"Doctor Name: Jane Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
+            {"Doctor Name: Jane Doe", "Hospital Address: TuyenQuang", "Exp: 5yrs", "Mobile No: 0123456789", "900"},
             {"Doctor Name: John Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "300"},
             {"Doctor Name: Jane Smith", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "500"},
             {"Doctor Name: John Doe", "Hospital Address: HaNoi", "Exp: 5yrs", "Mobile No: 0123456789", "800"}
