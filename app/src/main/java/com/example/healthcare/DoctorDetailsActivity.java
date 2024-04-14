@@ -99,7 +99,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
             item.put("line2", doctor_details[i][1]);
             item.put("line3", doctor_details[i][2]);
             item.put("line4", doctor_details[i][3]);
-            item.put("line5", "Consultation Fee: " + doctor_details[i][4]+"/-");
+            item.put("line5", "Consultation Fee: " + doctor_details[i][4]+"$");
             list.add(item);
         }
         sa = new SimpleAdapter(this, list,
